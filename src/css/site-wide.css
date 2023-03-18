@@ -1,0 +1,126 @@
+/* CSS Document */
+
+* {
+  font-weight: 400;
+  font-size: inherit;
+  color: #313131;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  font-family: 'Convergence', sans-serif;
+}
+html {
+  font-size: 14px;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+h1, h2, h3, h4, p, span {
+  padding: 0px;
+  margin: 0px;
+}
+
+h1, h2 {
+  font-family: 'Pattaya', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+li {
+  color: inherit;
+}
+
+input {
+  outline: none;
+  background-color: transparent;
+}
+input[type="text"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.primary-font {
+      font-family: 'Major Mono Display', monospace;
+}
+
+.section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.content-row {
+  max-width: 1380px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.rounded-4 {
+  border-radius: 15px;
+}
+
+.rounded-4-top {
+  border-radius: 15px 15px 0px 0px;
+}
+
+.rounded-4-bottom {
+  border-radius: 0px 0px 15px 15px;
+}
+
+.rounded-4-start {
+  border-radius: 15px 0px 0px 15px;
+}
+
+.rounded-4-end {
+  border-radius: 0px 15px 15px 0px;
+}
+
+.image-page-spacer {
+  min-width: 100%;
+  min-height: 80px;
+  object-fit: cover;
+  margin: 0px;
+}
+
+@media screen and (max-width: 991px) {
+  /* Cell Phone Tablet */
+  .content-row {
+    max-width: 800px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* Cell Phone Landscape */
+}
+
+@media screen and (max-width: 479px) {
+  /* Cell Phone Portrait */
+}
+
+.frosted {
+ background-color: rgba(255, 255, 255, .20);
+ backdrop-filter: blur(20px);
+}
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .frosted {
+    background-color: rgba(255, 255, 255, .10);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+  }
+}

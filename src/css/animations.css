@@ -1,0 +1,81 @@
+.grow {
+  transition: all .3s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.025);
+}
+
+.clickable:hover { cursor: pointer; }
+
+.shadow-grow {
+  box-shadow:  1px 1px 10px -1px #00000000;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Transition to a bigger shadow on hover */
+.shadow-grow:hover {
+  box-shadow: 1px 1px 10px -1px #00000030;
+}
+
+
+/* Flip Card Example:
+<div class="flip-card" style=" height: 200px; width: 200px;">
+  <div class="bg-primary flip-card-front" ></div>
+  <div class="bg-info flip-card-back" ></div>
+</div>
+*/
+
+.h-flip-card {
+  position: relative;
+  min-height: 10px;
+  min-width: 10px;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+/* Position the front and back side */
+/* The front and back are treated as seperate components. IE if you want a shadow, you must apply that to both front and back, not to the parent */
+.h-flip-card-front, .h-flip-card-back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.h-flip-card:hover {
+  transform: rotateY(180deg);
+}
+.h-flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.v-flip-card {
+  position: relative;
+  min-height: 10px;
+  min-width: 10px;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+/* Position the front and back side */
+/* The front and back are treated as seperate components. IE if you want a shadow, you must apply that to both front and back, not to the parent */
+.v-flip-card-front, .v-flip-card-back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.v-flip-card:hover {
+  transform: rotateX(180deg);
+}
+.v-flip-card-back {
+  transform: rotateX(180deg);
+}

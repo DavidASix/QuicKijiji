@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+#bgVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+}
+
+.hero-bg {
+  background: rgb(193,111,236);
+  background: linear-gradient(133deg, rgba(193,111,236,1) 0%, rgba(172,72,26,1) 100%);
+}
+
+.intro-bg {
+  background: rgb(33,37,41);
+  background: linear-gradient(180deg, rgba(33,37,41,1) 0%, rgba(106,61,177,1) 100%);
+}
+
+.webdev-bg {
+  background: rgb(120,2,2);
+  background: -moz-linear-gradient(180deg, rgba(120,2,2,1) 0%, rgba(192,50,56,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(120,2,2,1) 0%, rgba(192,50,56,1) 100%);
+  background: linear-gradient(180deg, rgba(120,2,2,1) 0%, rgba(192,50,56,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#780202",endColorstr="#c03238",GradientType=1);
+}
+
+.mobileapp-bg {
+  background: rgba(106,61,177,1);
+  background: -moz-linear-gradient(180deg, rgba(192,50,56,1) 0%, rgba(106,61,177,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(192,50,56,1) 0%, rgba(106,61,177,1) 100%);
+  background: linear-gradient(180deg, rgba(192,50,56,1) 0%, rgba(106,61,177,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c03238",endColorstr="#6a3db1",GradientType=1);
+}
+
+
+.hero-cat-card {
+  margin-top: 2px;
+}
+
+
+.web-header {
+  min-height: 20vh;
+}
+
+.why-dave {
+  min-height: 20vh;
+  box-shadow: inset 0px 10px 15px -10px #000, inset 0px -10px 15px -10px #000;
+}
+
+.app-screenshot {
+  max-height: 50vh;
+  margin-left:-100px;
+  max-width: 30vw;
+}
+
+.contact-text {
+  border-right: 1px solid white;
+}
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  /* if background blur is available, overlay the cards, otherwise do not. */
+  .hero-cat-card {
+    margin-top: -10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* Small	sm */
+  .web-header {
+    min-height: 10vh;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  /* Medium	md */
+  .contact-text {
+    border-right: 0px solid white;
+  }
+
+  .hero-cat-card {
+    margin-top: 5px;
+  }
+
+  .app-screenshot {
+    margin-left:-50px;
+}
+
+
+@media screen and (max-width: 992px) {
+  /* Large	lg */
+}
+
+
+@media screen and (max-width: 1200px) {
+  /* Extra large	xl */
+}
+
+
+@media screen and (max-width: 1400px) {
+  /* Extra extra large	xxl */
+}
